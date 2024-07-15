@@ -20,7 +20,6 @@ const App = () => {
             </Element>
 
             <Element name="aboutZine" className="section element-aboutZine" >
-                <h2>Fanzines</h2>
                 <AboutFanzines/>
             </Element>
 
