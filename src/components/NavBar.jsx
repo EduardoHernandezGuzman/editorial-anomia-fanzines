@@ -1,15 +1,16 @@
 import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
 
 const NavBar = () => {
-
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+            <div className="container">
                 <a className="navbar-brand" href="#">anomia fanzines</a>
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav">
+                
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to="home" smooth={true} duration={500}>Home</Link>
                         </li>
@@ -27,8 +28,9 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </div>
-            </nav>
-    )
+            </div>
+        </nav>
+    );
 }
 
 export default NavBar;
