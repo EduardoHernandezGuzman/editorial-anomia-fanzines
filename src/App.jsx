@@ -24,7 +24,6 @@ const App = () => {
             </Element>
 
             <Element name="aboutAnomia" className="section element-aboutAnomia" >
-                <h2>Sobre la editorial</h2>
                 <AboutUs/>
             </Element>
 

@@ -1,6 +1,26 @@
 .element-aboutAnomia {
     height: 100vh;
     background: #f8f9fa;
-    padding-top: 56px;
+    padding-top: 150px;
+  }
+  
+  .us-image {
+    max-width: 50%;
+    height: auto;    
+    border-radius: 8px; 
+    margin-top: 40px;
+  }
+  
+  h4 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.8em; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  p {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 1em; 
+    text-align: right; 
   }
   
