@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import "../styles/Contact.css";
 
 const AboutFanzines = () => {
@@ -18,9 +19,28 @@ const AboutFanzines = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const dataToSend = { ...formData };
-    console.log("Data to send:", dataToSend);
-    // Aquí puedes realizar la lógica para enviar los datos (ej. a una API)
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          message: formData.message,
+          reply_to: formData.email,
+        },
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Gracias por contactar con nosotros.");
+
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((err) => {
+        console.error("Failed to send email. Error: ", err);
+        alert("Error al enviar el mensaje. Inténtalo de nuevo.");
+      });
   };
 
   return (
