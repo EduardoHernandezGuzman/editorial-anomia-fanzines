@@ -1,4 +1,4 @@
-const otrosFanzines = [
+const listadoOtrosFanzines = [
   {
     id: 1,
     titulo: "El día más feliz de la vida",
@@ -7,4 +7,4 @@ const otrosFanzines = [
   },
 ];
 
-export default otrosFanzines;
+export default listadoOtrosFanzines;
