@@ -1,12 +1,12 @@
 import "../styles/FanzineCard.css";
 
-const FanzineCard = ({ titulo, fecha, image, link }) => {
+const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
   return (
     <div className="fanzine-card">
-      <img src={image} alt={titulo} className="fanzine-image" />
+      <img src={imagen} alt={titulo} className="fanzine-image" />
       <h5>{titulo}</h5>
-      <p>{fecha}</p>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      {fecha && <p>{fecha}</p>}
+      <a href={enlace} target="_blank" rel="noopener noreferrer">
         Comprar
       </a>
     </div>
