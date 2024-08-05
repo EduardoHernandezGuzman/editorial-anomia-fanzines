@@ -14,7 +14,6 @@ const App = () => {
       <NavBar />
 
       <Element name="home" className="section element-home">
-        <h1>Home</h1>
         <Home />
       </Element>
 
@@ -27,7 +26,6 @@ const App = () => {
       </Element>
 
       <Element name="store" className="section element-store">
-        <h2>Tienda</h2>
         <Store />
       </Element>
 

@@ -93,7 +93,7 @@ const AboutFanzines = () => {
             </div>
 
             <button type="submit" className="btn btn-primary">
-              Submit
+              Enviar
             </button>
           </form>
         </div>
