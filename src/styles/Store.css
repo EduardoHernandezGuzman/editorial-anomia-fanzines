@@ -17,7 +17,7 @@
 }
 
 .category-button.active {
-  background-color: #007bff;
+  background-color: #6e67aa;
   color: white;
 }
 
@@ -44,4 +44,8 @@
 
 .fanzine-card p {
   color: #666;
+}
+
+.pagination {
+  margin-top: 50px;
 }
