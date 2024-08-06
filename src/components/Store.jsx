@@ -1,11 +1,13 @@
 import { useState } from "react";
 import listadoAnomia from "../data/ListadoAnomia";
 import FanzineCard from "./FanzineCard";
+import AgeVerification from "./AgeVerification";
 import "../styles/Store.css";
 
 const Store = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [isVerified, setIsVerified] = useState(false);
   const fanzinesPerPage = 10;
 
   const categories = ["Iconostasis", "Iconostasis Mini", "Otros"];
@@ -31,6 +33,18 @@ const Store = () => {
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+
+  const handleAgeVerification = (isAdult) => {
+    if (isAdult) {
+      setIsVerified(true);
+    } else {
+      alert("Lo sentimos, no puedes acceder a este contenido.");
+    }
+  };
+
+  if (!isVerified) {
+    return <AgeVerification onConfirm={handleAgeVerification} />;
+  }
 
   return (
     <div className="store-container">
