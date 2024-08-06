@@ -8,7 +8,7 @@ const Store = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isVerified, setIsVerified] = useState(false);
-  const fanzinesPerPage = 10;
+  const fanzinesPerPage = 5;
 
   const categories = ["Iconostasis", "Iconostasis Mini", "Otros"];
 
