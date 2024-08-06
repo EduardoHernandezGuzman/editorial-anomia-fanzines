@@ -5,7 +5,7 @@
 .categories {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .category-button {
@@ -47,5 +47,7 @@
 }
 
 .pagination {
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
 }
