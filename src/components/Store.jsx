@@ -38,7 +38,7 @@ const Store = () => {
     if (isAdult) {
       setIsVerified(true);
     } else {
-      alert("Lo sentimos, no puedes acceder a este contenido.");
+      window.location.href = "https://www.google.com";
     }
   };
 
