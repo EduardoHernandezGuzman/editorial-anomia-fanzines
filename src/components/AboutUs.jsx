@@ -22,7 +22,7 @@ const AboutUs = () => {
         <div className="col-6">
           <img
             className="us-image"
-            src="src/assets/images/002.jpeg"
+            src="src/assets/images/otras/imp001.jpg"
             alt="aboutus"
           />
         </div>
