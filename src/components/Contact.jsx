@@ -47,14 +47,13 @@ const AboutFanzines = () => {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-6">
-          <h4>Contacta con nosotros</h4>
+          <div className="contact-form">
+            <span className="heading">Contacta con nosotros</span>
 
-          <form onSubmit={handleSubmit} className="mt-4">
-            <div className="form-group">
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre</label>
               <input
                 type="text"
-                className="form-control m-2"
                 id="name"
                 name="name"
                 placeholder="Aleister Crowley"
@@ -62,13 +61,10 @@ const AboutFanzines = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
 
-            <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
-                className="form-control m-2"
                 id="email"
                 name="email"
                 placeholder="aleister@crowley.com"
@@ -76,26 +72,20 @@ const AboutFanzines = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
 
-            <div className="form-group">
               <label htmlFor="message">Mensaje</label>
               <textarea
-                className="form-control m-2"
                 id="message"
                 name="message"
-                rows="3"
                 placeholder="Me encantan vuestros fanzines"
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
-            </div>
 
-            <button type="submit" className="btn btn-primary">
-              Enviar
-            </button>
-          </form>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
 
         <div className="col-6">
