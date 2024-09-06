@@ -91,7 +91,7 @@ const AboutFanzines = () => {
         <div className="col-6">
           <img
             className="contact-image"
-            src="src/assets/images/003.jpg"
+            src="src/assets/images/otras/ave001.jpg"
             alt="aboutus"
           />
         </div>
